@@ -11,14 +11,13 @@ In the maze file, the following characters represent:
 - `(whitespace)`: movable space
 - `E`: exit
 - `^`: starting position
-**Going outside the maze area is not allowed.**
 
 ## Demo
 A demo of the app is available at https://datpt98.github.io/maze-solver/.
 
 ## Algorithms
 - Breadth First Search (BFS): is a graph traversal algorithm that visits all the vertices of a graph in breadth-first order. In other words, it visits all the vertices at distance 1 from the starting point, then all the vertices at distance 2, and so on, until it finds the exit.
-- Backtracking (optional): is a algorithmic technique where possible solutions are incrementally constructed and tested. If a solution cannot be completed, the algorithm "backtracks" to a previous point and tries a different path. In the case of this app, backtracking was not used since it does not necessarily find the shortest path in the maze.
+- *Backtracking (optional)*: is a algorithmic technique where possible solutions are incrementally constructed and tested. If a solution cannot be completed, the algorithm "backtracks" to a previous point and tries a different path. In the case of this app, backtracking was not used since it does not necessarily find the shortest path in the maze.
 
 
 ## Credits
