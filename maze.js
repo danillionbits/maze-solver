@@ -32,6 +32,21 @@ mazeFileInput.addEventListener('change', (event) => {
       maze.pop();
     }
 
+    // Check if maze is valid
+    const rowLength = maze[0].length;
+    for (let i = 0; i < maze.length; i++) {
+      if (maze[i].length !== rowLength) {
+        alert('Maze is not valid. Please make sure each row has the same length.');
+        return;
+      }
+
+      const regexPattern = /^[\s#^E]*$/;
+      if (!regexPattern.test(maze[i])) {
+        alert('Maze is not valid. Please make sure it only contains whitespace, #, ^ and E');
+        return;
+      }
+    }
+
     // Add the maze to the page
     createMaze(maze);
 
@@ -39,7 +54,7 @@ mazeFileInput.addEventListener('change', (event) => {
     mainWrapper.classList.remove('hide');
   };
   reader.onerror = (event) => {
-    console.error(`Failed to read the file: ${event.target.error}`);
+    alert(`Failed to read the file: ${event.target.error}`);
   };
   reader.readAsText(file);
 });
