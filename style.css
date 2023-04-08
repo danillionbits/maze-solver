@@ -1,0 +1,100 @@
+body {
+    background-color: #1c1c1c;
+    color: #d4d4d4;
+    font-family: monospace;
+    margin: 0;
+    min-height: 100%;
+}
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.form-control {
+    background-color: #1c1c1c;
+    color: #d4d4d4;
+    border-color: #d4d4d4;
+}
+
+.form-control:focus {
+    background-color: #1c1c1c;
+    color: #d4d4d4;
+    border-color: #d4d4d4;
+    box-shadow: none;
+}
+
+#header-wrapper,
+#main-wrapper {
+    background-color: #1c1c1c;
+    color: #d4d4d4;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #d4d4d4;
+    border-radius: 5px;
+    max-width: 80%;
+    overflow: auto;
+}
+
+.hide {
+    display: none;
+}
+
+#maze-container {
+    text-align: center;
+}
+
+#maze-container span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+.maze-wall {
+    color: #d4d4d4;
+}
+
+.maze-path {
+    color: #00ff00;
+}
+
+.maze-entrance {
+    color: #00ffff;
+}
+
+.maze-exit {
+    color: #ff00ff;
+}
+
+.maze-exit.active {
+    text-decoration: underline;
+}
+
+#button-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: right;
+}
+
+#path-wrapper {
+    background-color: #1c1c1c;
+    color: #d4d4d4;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.path-container:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+#footer-wrapper {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
